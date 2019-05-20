@@ -1,8 +1,11 @@
 using System.Collections.Generic;
-using leetcode.fundament;
+using Leetcode.fundament;
 
-namespace leetcode.medium
+namespace Leetcode.medium
 {
+  /*
+    this is not a good soulution 
+   */
   public class ConstructBinarySearchTreeFromPreorderTraversal
   {
     public TreeNode BstFromPreorder(int[] preorder)
@@ -16,12 +19,15 @@ namespace leetcode.medium
     }
     private void Location(TreeNode node, int value)
     {
-      if(value>node.val){
-        if(node.right==null) node.right = new TreeNode(value);
-        else Location(node.right,value);
-      }else{
-        if(node.left==null) node.left = new TreeNode(value);
-        else Location(node.left,value);
+      if (value > node.val)
+      {
+        if (node.right == null) node.right = new TreeNode(value);
+        else Location(node.right, value);
+      }
+      else
+      {
+        if (node.left == null) node.left = new TreeNode(value);
+        else Location(node.left, value);
       }
     }
   }

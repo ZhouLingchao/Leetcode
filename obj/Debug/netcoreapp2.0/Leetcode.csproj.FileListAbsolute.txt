@@ -1,0 +1,10 @@
+C:\Code\leetcode\bin\Debug\netcoreapp2.0\Leetcode.deps.json
+C:\Code\leetcode\bin\Debug\netcoreapp2.0\Leetcode.runtimeconfig.json
+C:\Code\leetcode\bin\Debug\netcoreapp2.0\Leetcode.runtimeconfig.dev.json
+C:\Code\leetcode\bin\Debug\netcoreapp2.0\Leetcode.dll
+C:\Code\leetcode\bin\Debug\netcoreapp2.0\Leetcode.pdb
+C:\Code\leetcode\obj\Debug\netcoreapp2.0\Leetcode.csproj.CoreCompileInputs.cache
+C:\Code\leetcode\obj\Debug\netcoreapp2.0\Leetcode.AssemblyInfoInputs.cache
+C:\Code\leetcode\obj\Debug\netcoreapp2.0\Leetcode.AssemblyInfo.cs
+C:\Code\leetcode\obj\Debug\netcoreapp2.0\Leetcode.dll
+C:\Code\leetcode\obj\Debug\netcoreapp2.0\Leetcode.pdb

@@ -1,8 +1,8 @@
 
 using System.Collections.Generic;
-using leetcode.fundament;
+using Leetcode.fundament;
 
-namespace leetcode.medium
+namespace Leetcode.medium
 {
   public class BinarySearchTreeToGreaterSumTree
   {

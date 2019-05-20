@@ -1,4 +1,4 @@
-namespace leetcode.fundament
+namespace Leetcode.fundament
 {
   public class TreeNode
   {
