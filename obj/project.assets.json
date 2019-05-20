@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\leetcode\\Leetcode.csproj",
+      "projectUniqueName": "C:\\Code\\Leetcode\\Leetcode.csproj",
       "projectName": "Leetcode",
-      "projectPath": "C:\\Code\\leetcode\\Leetcode.csproj",
+      "projectPath": "C:\\Code\\Leetcode\\Leetcode.csproj",
       "packagesPath": "C:\\Users\\healu\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\leetcode\\obj\\",
+      "outputPath": "C:\\Code\\Leetcode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
