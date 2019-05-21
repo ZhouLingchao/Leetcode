@@ -1,0 +1,32 @@
+// out of memory
+namespace Leetcode.medium
+{
+  public class RLEIterator
+  {
+    private int[] _data;
+    private int _index;
+    public RLEIterator(int[] A)
+    {
+      var count = 0;
+      for (int i = 0; i < A.Length; i += 2)
+      {
+        count += A[i];
+      }
+      _data = new int[count];
+      var currentIndex = 0;
+      for (int i = 0; i < A.Length; i += 2)
+      {
+        for (int j = 0; j < A[i]; j++)
+        {
+            _data[currentIndex++] = A[i+1];
+        }
+      }
+    }
+    public int Next(int n)
+    {
+      _index += n;
+      if(_index > _data.Length) return -1;
+      else return _data[_index-1];
+    }
+  }
+}
