@@ -4,9 +4,9 @@ namespace Leetcode.medium
 {
   public class AllPathsFromSourceToTarget
   {
-    public IList<IList<int>> AllPathsSourceTarget(int[][] graph)
-    {
+    // public IList<IList<int>> AllPathsSourceTarget(int[][] graph)
+    // {
         
-    }
+    // }
   }
 }
