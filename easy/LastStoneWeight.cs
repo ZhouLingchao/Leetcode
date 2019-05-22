@@ -5,7 +5,7 @@ namespace Leetcode.easy
 {
   public class LastStoneWeight
   {
-    public int LastStoneWeight(int[] stones)
+    public int LastStoneWeigh(int[] stones)
     {
       Array.Sort(stones);
       var orderedList = new LinkedList<int>(stones);
