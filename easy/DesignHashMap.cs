@@ -17,7 +17,7 @@ namespace Leetcode.easy
       if (_data[remainder] != null)
       {
         var index = _data[remainder];
-        do
+        while (index.Next != null)
         {
           if (index.Key == key)
           {
@@ -25,8 +25,9 @@ namespace Leetcode.easy
             return;
           }
           index = index.Next;
-        } while (index.Next != null);
-        index.Next = new Node(key, value);
+        }
+        if (index.Key == key) index.Value = value;
+        else index.Next = new Node(key, value);
       }
       else
       {
@@ -38,7 +39,6 @@ namespace Leetcode.easy
     public int Get(int key)
     {
       var item = _data[key % SIZE];
-      if (null == item) return -1;
       while (item != null)
       {
         if (item.Key == key) return item.Value;
@@ -54,7 +54,7 @@ namespace Leetcode.easy
       var item = _data[remainder];
       if (null == item) return;
       Node prev = null;
-      do
+      while (item.Next != null)
       {
         if (item.Key == key)
         {
@@ -71,7 +71,17 @@ namespace Leetcode.easy
         prev = item;
         item = item.Next;
       }
-      while (item.Next != null);
+       if (item.Key == key)
+        {
+          if (null != prev)
+          {
+            prev.Next = item.Next;
+          }
+          else
+          {
+            _data[remainder] = item.Next;
+          }
+        }
 
     }
 
@@ -79,7 +89,7 @@ namespace Leetcode.easy
     {
       public Node(int key, int value)
       {
-        Key = Key;
+        Key = key;
         Value = value;
       }
       public int Key { get; set; }
