@@ -8,7 +8,7 @@ namespace Leetcode.easy
   {
     public IList<string> LetterCasePermutatio(string S)
     {
-      var list = new List<string>(;
+      var list = new List<string>();
       Add(list,  S, 0, "");
       return list;
     }
