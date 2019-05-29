@@ -1,0 +1,33 @@
+using System.Collections.Generic;
+
+namespace Leetcode.easy
+{
+  public class FindTheTownJudge
+  {
+    public int FindJudge(int N, int[][] trust)
+    {
+      if (N == 1) return 1;
+      var dic = new Dictionary<int, Model>(N);
+      foreach (var item in trust)
+      {
+        if (dic.ContainsKey(item[0])) dic[item[0]].A++;
+        else dic.Add(item[0], new Model { A = 1 });
+
+        if (dic.ContainsKey(item[1])) dic[item[1]].B++;
+        else dic.Add(item[1], new Model { B = 1 });
+      }
+
+      foreach (var item in dic)
+      {
+          if(item.Value.B == N - 1 && item.Value.A == 0) return item.Key;
+      }
+
+      return -1;
+    }
+    private class Model
+    {
+      public int A { get; set; }
+      public int B { get; set; }
+    }
+  }
+}
