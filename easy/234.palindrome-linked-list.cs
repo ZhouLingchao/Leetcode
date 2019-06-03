@@ -15,7 +15,7 @@ using Leetcode.fundament;
 *     public ListNode(int x) { val = x; }
 * }
 */
-public class Solution
+public class PalindromeLinkedList
 {
   public bool IsPalindrome(ListNode head)
   {

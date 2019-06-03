@@ -92,7 +92,7 @@ using Leetcode.fundament;
 *     public ListNode(int x) { val = x; }
 * }
 */
-public class Solution {
+public class IntersectionOfTwoLinkedLists {
     public ListNode GetIntersectionNode(ListNode headA, ListNode headB) {
         var set = new HashSet<ListNode>();
         var curr = headA;

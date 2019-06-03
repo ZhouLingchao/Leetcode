@@ -15,7 +15,7 @@ using Leetcode.fundament;
 *     public TreeNode(int x) { val = x; }
 * }
 */
-public class Solution
+public class LowestCommonAncestorOfABST
 {
   public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
   {

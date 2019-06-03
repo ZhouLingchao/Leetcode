@@ -5,8 +5,8 @@
  */
 using System.Collections.Generic;
 
-public class Solution {
-    public bool WordPattern(string pattern, string str) {
+public class WordPattern {
+    public bool WordPatter(string pattern, string str) {
         var arr = new string[26];
         var set = new HashSet<string>();
         var sArray = str.Split(' ');

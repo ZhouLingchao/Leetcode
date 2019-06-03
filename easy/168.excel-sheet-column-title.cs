@@ -54,7 +54,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-public class Solution {
+public class ExcelSheetColumnTitle {
     public string ConvertToTitle(int n) {
         var chars = new List<char>();
         while(n-- >0){
