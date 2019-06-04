@@ -15,8 +15,8 @@ using Leetcode.fundament;
 * }
 */
 public class LongestUnivaluePath {
-    public int LongestUnivaluePat(TreeNode root) {
+    // public int LongestUnivaluePat(TreeNode root) {
         
-    }
+    // }
 }
 
