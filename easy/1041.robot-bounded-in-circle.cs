@@ -4,8 +4,8 @@
  * [1041] Robot Bounded In Circle
  */
 public class RobotBoundedInCircle {
-    public bool IsRobotBounded(string instructions) {
+    // public bool IsRobotBounded(string instructions) {
         
-    }
+    // }
 }
 
